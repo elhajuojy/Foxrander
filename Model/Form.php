@@ -36,6 +36,6 @@ class Form implements IElmenet
     {
         return "<form action='$this->action' method='$this->method'>"
                 . implode("<br> <br>",$this->elements) .
-                "</form>";
+                "</form>"."<br>";
     }
 }
