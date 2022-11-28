@@ -1,0 +1,9 @@
+{
+    "name": "adm/wigets-app",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./Model"
+        }
+    },
+    "require": {}
+}

@@ -1,0 +1,28 @@
+<?php
+
+namespace Model;
+
+class Button implements  IElmenet
+{
+    private string $type ;
+    private string $value ;
+    private string $class_id ;
+
+    /**
+     * @param string $type
+     * @param string $value
+     * @param string $class_id
+     */
+    public function __construct(string $type, string $value, string $class_id)
+    {
+        $this->type = $type;
+        $this->value = $value;
+        $this->class_id = $class_id;
+    }
+
+
+    public function rander(): string
+    {
+        return  "<button type='$this->type' class='$this->class_id'>$this->value</button>";
+    }
+}
