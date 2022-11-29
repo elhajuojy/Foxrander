@@ -1,6 +1,6 @@
 <?php
-namespace Model;
-class Title implements IElmenet{
+namespace HtmlElements;
+class Header implements IElmenet{
     public $h;
     public $title;
     public $margin;

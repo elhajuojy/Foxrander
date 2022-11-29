@@ -1,6 +1,6 @@
 <?php
 
-namespace Model;
+namespace HtmlElements;
 
 class Button implements  IElmenet
 {

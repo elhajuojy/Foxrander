@@ -1,13 +1,11 @@
 <?php
 require  "../vendor/autoload.php";
-
-
-use Model\Form;
-use Model\Input;
-use Model\Button;
-use Model\Image;
-use Model\Title;
-use Model\Htmlscaffold;
+use HtmlElements\Button;
+use HtmlElements\Form;
+use HtmlElements\Htmlscaffold;
+use HtmlElements\Image;
+use HtmlElements\Input;
+use HtmlElements\Header;
 
 
 $form1 = new Form(
@@ -21,9 +19,11 @@ $form1 = new Form(
 
 );
 
+
+
 $arrayStyle = [
-    "../assets/css/style.css",
-    "../assets/css/style.css"
+    "assets/css/style.css",
+    "assets/css/style.css"
 ];
 
 
@@ -33,9 +33,9 @@ $Home = new Htmlscaffold(
     title: "Home Page",
     linkStyle: $arrayStyle,
     body: [
-        (new Title("welcome to our project","h1","center"))->rander(),
+        (new Header("welcome to our project","h1","center"))->rander(),
         $form1->rander(),
-        (new Image("image.png","image"))->rander(),
+        (new Image("assets/images/image.jpg","image"))->rander(),
     ],
 
 );

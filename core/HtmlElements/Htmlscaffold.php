@@ -1,6 +1,6 @@
 <?php
 
-namespace Model;
+namespace HtmlElements;
 
 class Htmlscaffold implements IElmenet
 {

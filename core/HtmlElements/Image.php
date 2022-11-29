@@ -1,5 +1,5 @@
 <?php
-namespace Model;
+namespace HtmlElements;
 
 class Image implements IElmenet
 {

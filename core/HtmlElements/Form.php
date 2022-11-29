@@ -1,6 +1,6 @@
 <?php
 
-namespace Model;
+namespace HtmlElements;
 
 use function Sodium\add;
 
