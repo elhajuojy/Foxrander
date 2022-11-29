@@ -6,6 +6,7 @@ use HtmlElements\Htmlscaffold;
 use HtmlElements\Image;
 use HtmlElements\Input;
 use HtmlElements\Header;
+use HtmlElements\Div;
 
 
 $arrayStyle = [
@@ -19,20 +20,23 @@ $arrayStyle = [
 $Home = new Htmlscaffold(
     title: "Home Page",
     linkStyle: $arrayStyle,
+
     body: [
         (new Header(title: "welcome to our project",h: "h1",margin: "center"))->rander(),
         (new Form(
-            childern: [
-                (new Input("firstname","text","firstname"))->rander(),
-                (new Input("password","password","password"))->rander(),
-                (new Button("submit","click me","btn"))->rander(),
-            ],
             method:"get" ,
             action:"#",
+            childern: [
+                (new Input(name: "mehdi",type: "text",value: "mehdi"))->rander(),
+                (new Input(name: "password",type: "password",value: "password"))->rander(),
+                (new Button(type: "submit",value:"click me",class_id: "btn", onclick:'alert(`Hello world`);'))->rander(),
+            ],
 
         ))->rander(),
+        (new Div(class: [],id: '',children: [
+            (new Image("../assets/images/foxrander.jpg","image"))->rander(),
+        ]))->rander()
 
-        (new Image("../assets/images/image.jpg","image"))->rander(),
     ],
 
 );

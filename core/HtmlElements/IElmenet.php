@@ -4,6 +4,7 @@ namespace HtmlElements;
 
 interface IElmenet
 {
+    
     /**
      * @return string
      */

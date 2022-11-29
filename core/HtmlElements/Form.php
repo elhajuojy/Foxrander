@@ -2,7 +2,7 @@
 
 namespace HtmlElements;
 
-use function Sodium\add;
+
 
 class Form implements IElmenet
 {
@@ -15,7 +15,7 @@ class Form implements IElmenet
      * @param string $action
      * @param array $childern
      */
-    public function __construct(array $childern = [],string $method, string $action, )
+    public function __construct(string $method, string $action,array $childern = [] )
     {
         $this->method = $method;
         $this->action = $action;
@@ -23,28 +23,9 @@ class Form implements IElmenet
     }
 
 
-    /**
-     * @param string $method
-     */
-    public function setMethod(string $method): void
-    {
-        $this->method = $method;
-    }
-
-    /**
-     * @param string $action
-     */
-    public function setAction(string $action): void
-    {
-        $this->action = $action;
-    }
 
 
-    public  function  addElement(IElmenet $element){
-        array_push($this->elements,$element->rander());
-    }
-
-    public  function childerns(array $arrayElment  ){
+    public  function childerns(array $arrayElment ){
             $this->childern = $arrayElment;
     }
 
