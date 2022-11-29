@@ -37,3 +37,12 @@ Install requirements:
 ```bash
 > composer install
 ```
+
+
+## Code preview writing syntax 🚀
+
+![Foxrander](./assets/images/Code%20Preview.png)
+
+## Html Page Rendered  
+
+![Foxrander](./assets/images/HtmlScreen.png)
