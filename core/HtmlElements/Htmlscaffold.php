@@ -47,7 +47,7 @@ class Htmlscaffold implements IElmenet
                     ".implode('',$this->linkStyle)."
                 </head>
                 <body>
-                        ". implode("<br> <br>", array: $this->body) ."
+                        ". implode("", array: $this->body) ."
                 </body>
                 </html>
         ";

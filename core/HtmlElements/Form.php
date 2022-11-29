@@ -33,7 +33,7 @@ class Form implements IElmenet
     public function rander(): string
     {
         return " <form action='$this->action' method='$this->method'>"
-                . implode("<br> <br>", array: $this->childern) .
-                "</form>"."<br>";
+                . implode("", array: $this->childern) .
+                "</form>";
     }
 }
