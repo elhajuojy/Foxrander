@@ -39,10 +39,11 @@ Install requirements:
 ```
 
 
+
 ## Code preview writing syntax 🚀
 
-![Foxrander](./assets/images/Code%20Preview.png)
+![Code Preview](https://user-images.githubusercontent.com/86893073/204660383-22282312-0b3e-4023-ad35-97e61816ce46.png)
 
 ## Html Page Rendered  
 
-![Foxrander](./assets/images/HtmlScreen.png)
+![HtmlScreen](https://user-images.githubusercontent.com/86893073/204660433-dd6dc2ec-6d79-4482-abb4-a065d65f6a3c.png)
