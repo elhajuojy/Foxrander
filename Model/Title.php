@@ -4,6 +4,7 @@ class Title implements IElmenet{
     public $h;
     public $title;
     public $margin;
+
     public function __construct(string $title,string $h,string $margin)
         {
         $this->h=$h;
@@ -13,7 +14,7 @@ class Title implements IElmenet{
     public function  rander(): string
     {
 
-        return " <$this->h style= text-align:"."$this->margin".";>$this->title</$this->h>";
+        return " <$this->h css= text-align:"."$this->margin".";>$this->title</$this->h>";
     }
 
 

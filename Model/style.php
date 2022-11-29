@@ -26,7 +26,7 @@ class Style implements IElmenet{
 public function  rander(): string
 {
 
-    return "<style> body{
+    return "<css> body{
                     background-color:$this->bg ;<br>
                     color:$this->color; 
                     <br> font_size:$this->font_size;<br>
@@ -42,7 +42,7 @@ public function  rander(): string
                         margin-right: auto;
                         width: 50%;
                     }
-                    </style>";
+                    </css>";
                 }
     
 }
