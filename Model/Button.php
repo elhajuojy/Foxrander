@@ -8,6 +8,7 @@ class Button implements  IElmenet
     private string $value ;
     private string $class_id ;
 
+
     /**
      * @param string $type
      * @param string $value
@@ -18,6 +19,7 @@ class Button implements  IElmenet
         $this->type = $type;
         $this->value = $value;
         $this->class_id = $class_id;
+        $this->rander();
     }
 
 
