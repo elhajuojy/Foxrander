@@ -25,6 +25,6 @@ class Button implements  IElmenet
 
     public function rander(): string
     {
-        return  "<button type='$this->type' class='$this->class_id'>$this->value</button>";
+        return  "<div type='$this->type' class='$this->class_id'>$this->value</div>";
     }
 }
