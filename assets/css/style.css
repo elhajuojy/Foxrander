@@ -1,6 +1,40 @@
 body{
-    background: white;
-    color: blue;
+    background: whitesmoke;
+    color: #211f1f;
     text-align: center;
     font-family: Arial, sans-serif;
+}
+
+.btn{
+    color: white;
+}
+.img-div{
+    width: 100%;
+    margin: auto;
+}
+
+
+.img-div img{
+    margin: auto;
+    border-radius: 0.3rem;
+    width: 50%;
+}
+
+input{
+    border-radius: 2px;
+    border: 3px solid antiquewhite ;
+    font-size: 1rem;
+    margin:  1rem;
+
+    padding: 0.4rem 0.7rem;
+}
+button{
+    background: cornflowerblue;
+    border: none;
+    margin:  1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.4rem 0.7rem;
 }
