@@ -4,8 +4,8 @@ namespace HtmlElements;
 
 abstract class BaseElement
 {
-    private  array $className =[]  ;
-    private  string $id  = '';
+    protected  array $className =[]  ;
+    protected  string $id  = '';
 
     /**
      * @param array $className
