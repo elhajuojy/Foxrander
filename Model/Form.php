@@ -9,6 +9,7 @@ class Form implements IElmenet
     private string $method;
     private string $action;
     private array $elements =[];
+  
 
 
     /**
@@ -31,11 +32,12 @@ class Form implements IElmenet
     public  function  addElement(IElmenet $element){
         array_push($this->elements,$element->rander());
     }
+   
 
     public function rander(): string
     {
-        return "<form action='$this->action' method='$this->method'>"
+        return " <form action='$this->action' method='$this->method'>"
                 . implode("<br> <br>",$this->elements) .
-                "</form>";
+                "</form>"."<br>";
     }
 }
