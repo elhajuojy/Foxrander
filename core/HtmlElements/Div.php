@@ -1,8 +1,8 @@
 <?php
 
-namespace HtmlElements;
+namespace HtmlElements ;
 
-class Div implements  IElmenet
+class Div extends BaseElement implements  IElmenet
 {
     private array $class=[] ;
     private string $id ;

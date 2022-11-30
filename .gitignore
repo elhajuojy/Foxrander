@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 /vendor/
+=======
+/vendor
+/node_modules
+>>>>>>> 6e3b6fddc384ee0e4a40475f59f6febe01f465da
