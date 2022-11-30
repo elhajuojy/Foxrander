@@ -1,0 +1,13 @@
+{
+    "name": "adm/foxrander",
+    "autoload": {
+        "psr-4": {
+            "Adm\\Foxrander\\": "./",
+            "HtmlElements\\": "core/HtmlElements/",
+            "core\\": "core/"
+
+
+        }
+    },
+    "require": {}
+}
