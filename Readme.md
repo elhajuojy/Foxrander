@@ -38,6 +38,13 @@ Install requirements:
 > composer install
 ```
 
+```bash
+> npm install 
+```
+
+
+
+
 
 
 ## Code preview writing syntax 🚀
