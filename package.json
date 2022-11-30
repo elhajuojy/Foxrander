@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "name": "foxrander",
+  "description": "<!-- MVC framework readme file -->\r # FoxRander",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./assets/css/style.css -o ./dist/output.css --watch",
+    "prettier":"npx prettier --write '*/.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Achchaimae/Foxrander.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Achchaimae/Foxrander/issues"
+  },
+  "homepage": "https://github.com/Achchaimae/Foxrander#readme"
+}
