@@ -36,9 +36,14 @@ $Home = new Htmlscaffold(
             ],
 
         ))->rander(),
-        (new Div(class: [""],id: 'div-1',children: [
-            (new Image("./assets/images/foxrander.jpg","image"))->rander(),
-        ]))->rander(),
+        (new Div(
+            className: "w-full",
+
+            children: [
+            (new Image(src:"./assets/images/foxrander.jpg",alt:"image",className: "bg-blue-500",))->rander(),
+        ]
+        
+        ))->rander(),
 
         (new Header(title: "Foxrander is a Micro frontend framework PHP based on Object-Oriented 
                             Programming which is help developer rander HTML and CSS faster than ever"

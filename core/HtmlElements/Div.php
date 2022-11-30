@@ -2,25 +2,22 @@
 
 namespace HtmlElements ;
 
-class Div  implements  IElmenet
+class Div extends BaseElement implements  IElmenet
 {
-    private array $class=[] ;
-    private string $id ;
     private array $children;
 
 
 
-    public function __construct(array $class=[], string $id="", array $children =[])
+    public function __construct( array $children =[],string $className= '',string $class_id='')
     {
-        $this->class = $class;
-        $this->id = $id;
         $this->children = $children;
+        parent::__construct(className: $className, id: $class_id);
     }
 
 
     public function rander(): string
     {
-        return " <div class='" . implode("", array: $this->class) ."' id='$this->id'>"
+        return " <div class='$this->className' id='$this->id'>"
                 . implode("", array: $this->children) .
                 "</div>";
     }
