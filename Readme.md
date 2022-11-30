@@ -1,7 +1,7 @@
 <!-- MVC framework readme file -->
 # FoxRander
 
-![Foxrander](./assets/images/foxrander.jpg)
+![Foxrander](assets/images/foxrander.jpg)
 
 ## Introduction
 

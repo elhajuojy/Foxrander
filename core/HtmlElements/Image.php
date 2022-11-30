@@ -15,7 +15,7 @@ class Image implements IElmenet
 
     public function rander(): string
     {
-        return "<img src=../assets/$this->src alt=$this->alt ></img>";
+        return "<img src=$this->src alt=$this->alt ></img>";
     }
 
 }

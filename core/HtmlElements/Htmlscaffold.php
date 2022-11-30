@@ -18,10 +18,6 @@ class Htmlscaffold implements IElmenet
         return $mappedArrya ;
 
     }
-
-
-
-
     /**
      * @param array $body
      * @param string $title

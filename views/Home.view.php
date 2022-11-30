@@ -1,5 +1,5 @@
 <?php
-require "../vendor/autoload.php";
+
 use HtmlElements\Button;
 use HtmlElements\Form;
 use HtmlElements\Htmlscaffold;
@@ -10,19 +10,17 @@ use HtmlElements\Div;
 
 
 $arrayStyle = [
-    "../assets/css/style.css",
-    "../assets/css/style.css"
+    "./assets/css/style.css",
+
 ];
 
-
-
-
+//$Head_title
 $Home = new Htmlscaffold(
-    title: "Home Page",
+    title: $headTitle,
     linkStyle: $arrayStyle,
     body: [
 
-        (new Header(title: "Welcome to FoxRander ",h: "h1"))->rander(),
+        (new Header(title: $h1Title ,h: "h1"))->rander(),
         (new Form(
             method:"get" ,
             action:"#",
@@ -34,12 +32,12 @@ $Home = new Htmlscaffold(
 
         ))->rander(),
         (new Div(class: ["img-div img-container"],id: 'div-1',children: [
-            (new Image("../assets/images/foxrander.jpg","image"))->rander(),
+            (new Image("./assets/images/foxrander.jpg","image"))->rander(),
         ]))->rander(),
 
         (new Header(title: "Foxrander is a Micro frontend framework PHP based on Object-Oriented 
                             Programming which is help developer rander HTML and CSS faster than ever"
-                            ,h: "h4",))->rander()
+            ,h: "h4",))->rander()
     ],
 
 );
