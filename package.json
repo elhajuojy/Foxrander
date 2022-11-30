@@ -1,26 +1,22 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
-  },
   "name": "foxrander",
-  "description": "<!-- MVC framework readme file -->\r # FoxRander",
   "version": "1.0.0",
-  "main": "tailwind.config.js",
-  "dependencies": {
-    
-  },
+  "description": "<!-- MVC framework readme file -->\r # FoxRander",
+  "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./assets/css/style.css -o ./dist/output.css --watch",
-    "prettier":"npx prettier --write '*/.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Achchaimae/Foxrander.git"
+    "url": "git+https://github.com/elhajuojy/Foxrander.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Achchaimae/Foxrander/issues"
+    "url": "https://github.com/elhajuojy/Foxrander/issues"
   },
-  "homepage": "https://github.com/Achchaimae/Foxrander#readme"
+  "homepage": "https://github.com/elhajuojy/Foxrander#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
 }

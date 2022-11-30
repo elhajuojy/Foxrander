@@ -5,8 +5,8 @@
             "Adm\\Foxrander\\": "./",
             "HtmlElements\\": "core/HtmlElements/",
             "core\\": "core/"
-
-
+            
+            
         }
     },
     "require": {}
