@@ -1,3 +1,4 @@
+
 <?php
 
 use HtmlElements\Button;
@@ -10,30 +11,24 @@ use HtmlElements\Div;
 
 
 $arrayStyle = [
-    "./dist/output.css",
-
+    "./build/output.css",
 ];
+
+
 
 //$Head_title
 $Home = new Htmlscaffold(
     title: $headTitle,
     linkStyle: $arrayStyle,
     body: [
-
-        (new Header(title: $h1Title ,h: "h1",className:
-            "text-2xl font-bold cursor-pointer
-            "))->rander(),
+        (new Header(title: $h1Title ,h: "h1",className:"
+            text-center font-medium text-slate-500
+        "))->rander(),
         (new Form(
             method:"get" ,
             action:"#",
             childern: [
-                (new Input(name: "mehdi",type: "text",value: "mehdi",className :"
-                    block w-full text-sm text-slate-500
-                    file:mr-4 file:py-2 file:px-4
-                    file:rounded-full file:border-0
-                    file:text-sm file:font-semibold
-                    file:bg-violet-50 file:text-violet-700
-                    hover:file:bg-violet-100",
+                (new Input(name: "mehdi",type: "text",value: "mehdi",
                 class_id:"input-style"
                 ))->rander(),
                 (new Input(name: "password",type: "password",value: ""))->rander(),

@@ -2,7 +2,7 @@
 
 namespace HtmlElements ;
 
-class Div extends BaseElement implements  IElmenet
+class Div  implements  IElmenet
 {
     private array $class=[] ;
     private string $id ;
