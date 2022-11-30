@@ -15,12 +15,12 @@ class Button extends BaseElement implements  IElmenet
      * @param string $value
      * @param mixed $onclick
      */
-    public function __construct(string $type, string $value,  $className= [],string $class_id= '',mixed $onclick)
+    public function __construct(string $type, string $value,  $className= [],string $class_id= '',mixed $onclick ='')
     {
         $this->type = $type;
         $this->value = $value;
-        $this->onclick = $onclick;
         parent::__construct(className:  $className, id: $class_id);
+        $this->onclick = $onclick;
 
     }
 
