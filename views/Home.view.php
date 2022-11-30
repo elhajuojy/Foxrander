@@ -10,7 +10,7 @@ use HtmlElements\Div;
 
 
 $arrayStyle = [
-    "./assets/css/style.css",
+    "./dist/output.css",
 
 ];
 
@@ -20,18 +20,28 @@ $Home = new Htmlscaffold(
     linkStyle: $arrayStyle,
     body: [
 
-        (new Header(title: $h1Title ,h: "h1"))->rander(),
+        (new Header(title: $h1Title ,h: "h1",className:
+            "text-2xl font-bold cursor-pointer
+            "))->rander(),
         (new Form(
             method:"get" ,
             action:"#",
             childern: [
-                (new Input(name: "mehdi",type: "text",value: "mehdi"))->rander(),
+                (new Input(name: "mehdi",type: "text",value: "mehdi",className :"
+                    block w-full text-sm text-slate-500
+                    file:mr-4 file:py-2 file:px-4
+                    file:rounded-full file:border-0
+                    file:text-sm file:font-semibold
+                    file:bg-violet-50 file:text-violet-700
+                    hover:file:bg-violet-100",
+                class_id:"input-style"
+                ))->rander(),
                 (new Input(name: "password",type: "password",value: ""))->rander(),
-                (new Button(type: "submit",value:"click me",class_id: "btn", className: ["btn btn-primary"],onclick:'alert(`Hello world`);'))->rander(),
+                (new Button(type: "submit",value:"click me",class_id: "btn", className: "btn btn-primary",onclick:'alert(`Hello world`);'))->rander(),
             ],
 
         ))->rander(),
-        (new Div(class: ["img-div img-container"],id: 'div-1',children: [
+        (new Div(class: [""],id: 'div-1',children: [
             (new Image("./assets/images/foxrander.jpg","image"))->rander(),
         ]))->rander(),
 
