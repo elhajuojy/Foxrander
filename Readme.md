@@ -46,6 +46,12 @@ Install requirements:
 > npm run tailwind 
 ```
 
+run the project 
+
+```bash
+> PHP -S localhost:8000
+```
+
 ## Code preview writing syntax 🚀
 
 ![Code Preview](https://user-images.githubusercontent.com/86893073/204660383-22282312-0b3e-4023-ad35-97e61816ce46.png)
