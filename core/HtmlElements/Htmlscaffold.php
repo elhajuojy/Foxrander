@@ -29,7 +29,7 @@ class Htmlscaffold implements IElmenet
         $this->title = $title;
         $this->linkStyle = $linkStyle;
         $this->linkStyle =  $this->mapLinks($this->linkStyle);
-
+        
     }
 
     public function rander(): string
