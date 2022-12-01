@@ -2,13 +2,12 @@
 
 namespace HtmlElements;
 
-class Htmlscaffold implements IElmenet
+class Htmlscaffold implements IElmenet, IHasChildern
 {
     private array $body = [];
     private string $title;
     private array $linkStyle = [] ;
     private string $icon = "";
-
     //we create mapLinks to return new array with the link element in the html for every link giving in the
     // creation of the object
    private function mapLinks($array):array{
@@ -24,6 +23,17 @@ class Htmlscaffold implements IElmenet
      * @param string $title
      * @param string $linkStyle
      */
+    
+    public function mapBody(){
+        
+        $arr = [];
+        foreach($this->body as $element ){
+            array_push($arr,$element->rander());
+        }
+        
+        $this->body = $arr;
+    }
+    
     public function __construct( string $title, array $linkStyle = [],array $body = [],string $icon = '')
     {
         $this->body = $body;
@@ -31,6 +41,7 @@ class Htmlscaffold implements IElmenet
         $this->linkStyle = $linkStyle;
         $this->linkStyle =  $this->mapLinks($this->linkStyle);
         $this->icon = $icon;
+        $this->mapBody();
         echo $this->rander();
     }
 

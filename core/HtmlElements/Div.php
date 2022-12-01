@@ -2,7 +2,7 @@
 
 namespace HtmlElements ;
 
-class Div extends BaseElement implements  IElmenet
+class Div extends BaseElement implements  IElmenet , IHasChildern
 {
     private array $children;
 
@@ -12,9 +12,20 @@ class Div extends BaseElement implements  IElmenet
     {
         $this->children = $children;
         parent::__construct(className: $className, id: $class_id);
+        $this->mapBody();
     }
 
-
+    
+    public function mapBody(){
+        
+        $arr = [];
+        foreach($this->children as $element ){
+            array_push($arr,$element->rander());
+        }
+        $this->children = $arr;
+    
+    }
+    
     public function rander(): string
     {
         return " <div class='$this->className' id='$this->id'>"
