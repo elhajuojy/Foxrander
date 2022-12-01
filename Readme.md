@@ -42,10 +42,9 @@ Install requirements:
 > npm install 
 ```
 
-
-
-
-
+```bash
+> npm run tailwind 
+```
 
 ## Code preview writing syntax 🚀
 
