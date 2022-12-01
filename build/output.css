@@ -521,29 +521,38 @@ video {
   display: grid;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
 
-.w-9\/12 {
-  width: 75%;
+.w-48 {
+  width: 12rem;
 }
 
 .w-full {
   width: 100%;
 }
 
-.content-center {
-  align-content: center;
+.w-9\/12 {
+  width: 75%;
 }
 
-.items-center {
-  align-items: center;
+.content-center {
+  align-content: center;
 }
 
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-700 {
