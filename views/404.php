@@ -40,7 +40,7 @@ className: "grid content-center h-screen w-full  bg-indigo-700"
 
 
 $PageNotFOund = new Htmlscaffold(
-    title:"Page Note Found",
+    title:"Page Not Found",
     linkStyle:$arrayStyle,
     icon: "../assets/images/foxIco.ico",
     body:[
