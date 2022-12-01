@@ -552,6 +552,10 @@ video {
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -566,8 +570,25 @@ video {
   line-height: 2.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-white {
