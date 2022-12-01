@@ -28,9 +28,9 @@ $Home = new Htmlscaffold(
             ,h: "h3",))->rander(),
         (new Div(
             children: [
-            (new Image(src:"./assets/images/foxrander.jpg",alt:"image",className: "bg-blue-500 w-48",))->rander(),
+            (new Image(src:"./assets/images/foxrander.jpg",alt:"image",className: "bg-blue-500 w-9/12 ",))->rander(),
         ],
-            className: "w-full"
+            className: "w-full m-auto"
         
         ))->rander(),
 

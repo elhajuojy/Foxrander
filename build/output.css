@@ -513,8 +513,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.w-48 {
-  width: 12rem;
+.m-auto {
+  margin: auto;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .w-full {
