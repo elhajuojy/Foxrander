@@ -24,15 +24,13 @@ $mainSection  =  new Div(children:[
     new Header(title:"404",h:"h1",
     className:" text-center text-white font-bold text-7xl"
     ),
+
     new Header("Oops ! This Page could not be Found",h:"h5",className:"text-center text-white font-bold text-3xl leading-loose "),
     $imageFox
     ],
 
 className: "grid content-center h-screen w-full  bg-indigo-700"
 );
-
-
-
 
 
 
