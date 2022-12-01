@@ -14,6 +14,7 @@ class Ahref extends BaseElement implements  IElmenet
         $this->link = $link;
         $this->message=$message;
         parent::__construct(className: $className, id: $class_id);
+        
     }
 
 

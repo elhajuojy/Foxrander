@@ -42,7 +42,6 @@ $Home = new Htmlscaffold(
 
 );
 
-echo $Home->rander();
 
 
 

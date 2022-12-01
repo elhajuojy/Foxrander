@@ -31,6 +31,7 @@ class Htmlscaffold implements IElmenet
         $this->linkStyle = $linkStyle;
         $this->linkStyle =  $this->mapLinks($this->linkStyle);
         $this->icon = $icon;
+        echo $this->rander();
     }
 
     public function rander(): string

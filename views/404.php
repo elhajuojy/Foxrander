@@ -39,6 +39,9 @@ className: "grid content-center h-screen w-full  bg-indigo-700"
 
 
 
+
+//i call the rander and echo the HtmlScaffold in the construct of the object 
+
 $PageNotFOund = new Htmlscaffold(
     title:"Page Not Found",
     linkStyle:$arrayStyle,
@@ -49,4 +52,3 @@ $PageNotFOund = new Htmlscaffold(
 );
 
 
-echo $PageNotFOund->rander();
