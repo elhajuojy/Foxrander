@@ -6,7 +6,8 @@ class Htmlscaffold implements IElmenet
 {
     private array $body = [];
     private string $title;
-    public array $linkStyle = [] ;
+    private array $linkStyle = [] ;
+    private string $icon = "";
 
     //we create mapLinks to return new array with the link element in the html for every link giving in the
     // creation of the object
@@ -23,13 +24,13 @@ class Htmlscaffold implements IElmenet
      * @param string $title
      * @param string $linkStyle
      */
-    public function __construct( string $title, array $linkStyle = [],array $body = [],)
+    public function __construct( string $title, array $linkStyle = [],array $body = [],string $icon = '')
     {
         $this->body = $body;
         $this->title = $title;
         $this->linkStyle = $linkStyle;
         $this->linkStyle =  $this->mapLinks($this->linkStyle);
-        
+        $this->icon = $icon;
     }
 
     public function rander(): string
@@ -40,6 +41,7 @@ class Htmlscaffold implements IElmenet
                 <head>
                   <meta charset=utf-8>
                   <title>$this->title</title>
+                  <link rel='shortcut icon' href='$this->icon'>
                     ".implode('',$this->linkStyle)."
                 </head>
                 <body>
