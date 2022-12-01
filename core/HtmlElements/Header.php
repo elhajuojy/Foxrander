@@ -13,7 +13,7 @@ class Header extends BaseElement implements IElmenet{
         public function  rander(): string
         {
 
-            return " <$this->h class = '$this->className' >$this->title</$this->h>";
+            return " <$this->h class='$this->className' >$this->title</$this->h>";
         }
 
 
