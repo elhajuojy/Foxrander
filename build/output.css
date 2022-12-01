@@ -513,20 +513,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.grid {
-  display: grid;
+.m-auto {
+  margin: auto;
 }
 
-.h-full {
-  height: 100%;
+.grid {
+  display: grid;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.w-48 {
-  width: 12rem;
+.w-9\/12 {
+  width: 75%;
 }
 
 .w-full {
@@ -537,14 +537,13 @@ video {
   align-content: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-700 {
