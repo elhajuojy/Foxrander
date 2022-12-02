@@ -4,7 +4,7 @@ namespace HtmlElements;
 
 
 
-class Form implements IElmenet
+class Form implements IElmenet,IHasChildern
 {
     private string $method;
     private string $action;

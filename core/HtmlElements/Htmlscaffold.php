@@ -2,7 +2,7 @@
 
 namespace HtmlElements;
 
-class Htmlscaffold implements IElmenet
+class Htmlscaffold implements IElmenet,IHasChildern
 {
     private array $body = [];
     private string $title;
