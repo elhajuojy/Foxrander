@@ -22,7 +22,7 @@ class Router
         if (array_key_exists($this->uri, $this->routes)) {
             require $this->routes[$this->uri];
         } else {
-            echo "false";
+            // echo "false";
             $this->abort();
         }
     }
