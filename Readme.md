@@ -55,10 +55,10 @@ run the project
 
 ## Code preview writing syntax 🚀
 
-![404 Page preview ](https://user-images.githubusercontent.com/86893073/205167217-6204d6d9-7df6-4ffa-9dce-2fa436158a99.png)
+![404PageNotFound](https://user-images.githubusercontent.com/86893073/205167294-8b341569-2aca-49a9-93e1-f1f6e7127ad0.png)
 
 ## Html Page Rendered 
 
-![404PageNotFound](https://user-images.githubusercontent.com/86893073/205167294-8b341569-2aca-49a9-93e1-f1f6e7127ad0.png)
 
 
+![404 Page preview ](https://user-images.githubusercontent.com/86893073/205167217-6204d6d9-7df6-4ffa-9dce-2fa436158a99.png)
