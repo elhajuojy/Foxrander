@@ -11,9 +11,9 @@ Foxrander is a Micro frontend framework PHP based on   Object-Oriented Programmi
 
 Foxrander has a lot of features out of the box and it is easy to use and customize. Some of the features are:
 * Rander HTML element 
-* Create CSS style
 * Routing 
-
+* PSR-4 Autoloading
+* tailwind css 
 
 
 *pov: the project is in process...*
