@@ -4,7 +4,7 @@ namespace HtmlElements;
 
 
 
-class Form implements IElmenet,IHasChildern
+class Form implements IElmenet
 {
     private string $method;
     private string $action;
@@ -22,16 +22,8 @@ class Form implements IElmenet,IHasChildern
         $this->childern = $childern;
     }
 
-    public function mapBody(){
-        
-        $arr = [];
-        foreach($this->children as $element ){
-            array_push($arr,$element->rander());
-        }
-        $this->children = $arr;
-    
-    }
-
+    use THasChildren;
+  
 
     public  function childerns(array $arrayElment ){
             $this->childern = $arrayElment;

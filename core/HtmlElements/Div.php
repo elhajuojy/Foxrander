@@ -2,10 +2,11 @@
 
 namespace HtmlElements ;
 
-class Div extends BaseElement implements  IElmenet ,IHasChildern
+
+class Div extends BaseElement implements  IElmenet 
 {
     private array $children;
-
+     use THasChildren;
 
 
     public function __construct( array $children =[],string $className= '',string $class_id='')
@@ -15,16 +16,17 @@ class Div extends BaseElement implements  IElmenet ,IHasChildern
         $this->mapBody();
     }
 
-    
-    public function mapBody(){
+   
+
+    // public function mapBody(){
         
-        $arr = [];
-        foreach($this->children as $element ){
-            array_push($arr,$element->rander());
-        }
-        $this->children = $arr;
+    //     $arr = [];
+    //     foreach($this->children as $element ){
+    //         array_push($arr,$element->rander());
+    //     }
+    //     $this->children = $arr;
     
-    }
+    // }
     
     public function rander(): string
     {

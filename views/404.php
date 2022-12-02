@@ -5,6 +5,7 @@ use HtmlElements\Header;
 use HtmlElements\Htmlscaffold;
 use HtmlElements\Image;
 
+
 $arrayStyle = [
     "./build/output.css",
 ];
