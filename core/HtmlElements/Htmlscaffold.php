@@ -37,6 +37,8 @@ class Htmlscaffold implements IElmenet
         $this->body = $this->children;
         echo $this->rander();
     }
+    
+    
 
     public function rander(): string
     {
