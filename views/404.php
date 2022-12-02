@@ -13,7 +13,7 @@ $arrayStyle = [
 
 
 $imageFox = new Div(children:[
-        new Image(src:"../assets/images/FoxIcon.png",alt:"fox image",className:"w-96 m-auto"),  
+        new Image(src:"./assets/images/FoxIcon.png",alt:"fox image",className:"w-96 m-auto"),  
     ],
     className:"w-full "
 );
