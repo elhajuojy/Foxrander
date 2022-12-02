@@ -2,14 +2,16 @@
 
 namespace HtmlElements;
 
-class Htmlscaffold implements IElmenet,IHasChildern
+class Htmlscaffold implements IElmenet
 {
     private array $body = [];
     private string $title;
     private array $linkStyle = [] ;
     private string $icon = "";
+
     //we create mapLinks to return new array with the link element in the html for every link giving in the
     // creation of the object
+    
    private function mapLinks($array):array{
         $mappedArrya = [];
         foreach ($array as $item){
