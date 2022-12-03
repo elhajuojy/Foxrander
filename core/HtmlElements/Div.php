@@ -17,17 +17,6 @@ class Div extends BaseElement implements  IElmenet
     }
 
    
-
-    // public function mapBody(){
-        
-    //     $arr = [];
-    //     foreach($this->children as $element ){
-    //         array_push($arr,$element->rander());
-    //     }
-    //     $this->children = $arr;
-    
-    // }
-    
     public function rander(): string
     {
         return " <div class='$this->className' id='$this->id'>"

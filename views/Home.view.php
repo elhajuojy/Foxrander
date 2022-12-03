@@ -23,8 +23,7 @@ $Home = new Htmlscaffold(
     title: $headTitle,
     linkStyle: $arrayStyle,
     body: [
-
-        new Header(title: $h1Title ,h: "h1",className:"text-center text-5xl mt-6"),
+        new Header(title: $h1Title ,h: "h1",className:"text-center text-5xl mt-6 mt-5"),
         new P(text:"<br>Foxrander is a Micro frontend framework PHP based on Object-Oriented 
         Programming which is help developer rander HTML and CSS faster than ever",className:"text-center w-96 m-auto  mb-6"),
         new Div(

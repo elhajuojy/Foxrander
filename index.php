@@ -7,6 +7,8 @@ use core\Router;
 
 require "vendor/autoload.php";
 
+$routes = require "routes.php";
+
 
 //database Configuration 
 $config = require ("config.php");
@@ -21,10 +23,8 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $route = new Router(
     uri:  $uri,
-    routes: [
-        "/"=>"Controller/HomeController.php",
-        "/Home"=>"Controller/HomeController.php",
-]);
+    routes: $routes
+);
 
 
 

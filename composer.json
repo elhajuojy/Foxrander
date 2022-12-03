@@ -4,9 +4,8 @@
         "psr-4": {
             "Adm\\Foxrander\\": "./",
             "HtmlElements\\": "core/HtmlElements/",
-            "core\\": "core/"
-            
-            
+            "core\\": "core/",
+            "Model\\": "Model/"
         }
     },
     "require": {}
