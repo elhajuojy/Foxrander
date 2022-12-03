@@ -3,7 +3,7 @@
 namespace HtmlElements;
 
 
-class Textarea extends BaseElement implements IElmenet{
+class Video extends BaseElement implements IElmenet{
     private string $src;
     private int $height;
     private int $width;
@@ -22,11 +22,7 @@ class Textarea extends BaseElement implements IElmenet{
     public function  rander(): string
     {
         // TODO: Implement rander() method.
-        return "<video width='$this->width' id='$this->id' height='$this->height' controls src='$this->src' type='$this->tupe' >
+        return "<video width='$this->width' id='$this->id' height='$this->height' controls src='$this->src' type='$this->type' >
 </video>";
     }
-
-
-
-
 }
