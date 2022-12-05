@@ -20,7 +20,7 @@ class Ahref extends BaseElement implements  IElmenet
 
     public function rander(): string
     {
-        return " <a href='https:$this->link' class='$this->className' id='$this->id'>
+        return " <a href='$this->link' class='$this->className' id='$this->id'>
                  $this->message
                 </a>";
     }
