@@ -2,6 +2,7 @@
 namespace core;
 
 use PDO;
+use PDOException;
 
 class Database
 {
@@ -11,10 +12,17 @@ class Database
     public function __construct($config, $username = 'root', $password = '')
     {
         $dsn = 'mysql:' . http_build_query($config, '', ';');
-
-        $this->connection = new PDO($dsn, $username, $password, [
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-        ]);
+        try{
+            $this->connection = new PDO($dsn, $username, $password, [
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+            ]);
+        
+        }catch(PDOException $e){
+            
+            echo "=>".$e;
+            die();
+            
+        }
     }
 
     public function query($query, $params = [])
@@ -27,7 +35,7 @@ class Database
     }
 
     public  function  find(){
-        return $this->statement->fetch();
+        return $this->statement->fetchAll();
     }
     public  function findOrFail(){
 
