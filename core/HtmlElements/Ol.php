@@ -1,33 +1,29 @@
 <?php
 
 namespace HtmlElements;
-class Ol implements IElmenet
+class Ol extends BaseElement implements IElmenet 
 {
     
-    private array $childern =[];
+    private array $children =[];
 
     /**
      * @param string $method
      * @param string $action
      * @param array $childern
      */
-    public function __construct(array $childern = [] )
-    {
-        $this->childern = $childern;
-    }
-
     use THasChildren;
-  
-
-    public  function childerns(array $arrayElment ){
-            $this->childern = $arrayElment;
+    public function __construct(array $children = [] ,string $className= '',string $class_id='')
+    {
+        $this->children = $children;
+        $this->mapBody();
+        parent::__construct(className: $className, id: $class_id);
     }
 
 
     public function rander(): string
     {
-        return " <ol> "
-                . implode("", array: $this->childern) .
+        return " <ol class='$this->className'> "
+                . implode("", array: $this->children) .
                 "</ol>";
     }
 }
