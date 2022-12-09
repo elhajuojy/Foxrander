@@ -8,6 +8,13 @@ use core\Router;
 require "vendor/autoload.php";
 
 $routes = require "routes.php";
+$db = new Database([
+    'host' => 'localhost',
+    'dbname' => 'test',
+    'charset' => 'utf8'
+]);
+
+define('DB', $db);
 
 
 
