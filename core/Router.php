@@ -1,39 +1,55 @@
 <?php
 
+// namespace Core\Router;
 namespace core;
-
 
 class Router
 {
-    private string $uri  ;
-    private  array $routes  ;
-    
-    /**
-     * @param array $routes
-     */
-    
-    public function __construct(string $uri = "", array $routes = [])
-    {
-        $this->routes = $routes;
-        $this->uri = $uri;
+    //todo : build a router class
+    public $routes = [];
+
+
+    public function add($uri, $controller, $method ){
+        $this->routes[]= [
+            'uri' => $uri,
+            'controllers' => $controller,
+            'method' => strtoupper($method)
+        ];
     }
-    
-    public function reslove() {
-        if (array_key_exists($this->uri, $this->routes)) {
-            require $this->routes[$this->uri];
-        } else {
-            // echo "false";
-            $this->abort();
+
+    public function get($uri, $controller){
+        $this->add($uri, $controller, 'GET');
+    }
+
+    public function post($uri, $controller){
+        $this->add($uri, $controller, 'POST');
+    }
+
+    public function put($uri, $controller){
+        $this->add($uri, $controller, 'PUT');
+    }
+
+    public function delete($uri, $controller){
+        $this->add($uri, $controller, 'DELETE');
+    }
+
+    public function patch($uri, $controller){
+        $this->add($uri, $controller, 'PATCH');
+    }
+
+    public function update($uri, $controller){
+        $this->add($uri, $controller, 'UPDATE');
+    }
+
+    public function route($uri, $method){
+        foreach($this->routes as $route){
+            if($route['uri'] === $uri && $route['method'] === strtoupper($method)){
+                return require_once base_path($route['controllers']);
+            }
         }
+
+        authorize(false, Response::NOT_FOUND);
     }
-
-    public static function abort($code = 404) {
-        http_response_code($code);
-        require "views/{$code}.php";
-
-        die();
-    }
-
 
 
 }

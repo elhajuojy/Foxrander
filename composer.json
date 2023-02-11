@@ -5,8 +5,12 @@
             "Adm\\Foxrander\\": "./",
             "HtmlElements\\": "core/HtmlElements/",
             "core\\": "core/",
-            "Model\\": "Model/"
+            "Model\\": "Model/",
+            "controller\\": "controllers/"
         }
     },
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "ext-pdo": "*"
+    }
 }
