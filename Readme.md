@@ -49,7 +49,7 @@ Install requirements:
 run the project 
 
 ```bash
-> PHP -S localhost:8000
+> PHP -S localhost:8000 -t public
 ```
 
 
